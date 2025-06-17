@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xie Ruan Ying Jun - Links</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000000;
+      color: #00f7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('XR.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #00f7ff;
+    }
+    .profile h1 {
+      font-size: 26px;
+      margin: 0;
+      color: #00f7ff;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 90%;
+      max-width: 400px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .links a {
+      background-color: #111;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #00f7ff;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00f7ff80;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .links a:hover {
+      background-color: #222;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="XR.png" alt="Profile Avatar">
+    <h1>Xie Ruan Ying Jun</h1>
+  </div>
+  <div class="links">
+    <a href="https://steamcommunity.com/profiles/76561198444169867/" target="_blank">🎮 Steam</a>
+    <a href="https://www.tiktok.com/@yingjun.1525" target="_blank">🎵 TikTok</a>
+    <a href="https://www.instagram.com/xieruanyingjun" target="_blank">📸 Instagram</a>
+    <a href="https://open.spotify.com/user/gkn4qyz7rj5ij42yc6zo6kicl" target="_blank">🎧 Spotify</a>
+    <a href="https://www.reddit.com/user/xieruanyingjunn/" target="_blank">👾 Reddit</a>
+    <a href="https://discord.com/users/" target="_blank">💬 Discord</a>
+  </div>
+
+  <!-- Music Player & Toggle Button -->
+  <audio id="bg-music" loop>
+    <source src="your_music.mp3" type="audio/mpeg">
+  </audio>
+  <button onclick="toggleMusic()" style="position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background-color: #00f7ff; color: #000; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+    🔊 Bật / Tắt nhạc
+  </button>
+  <script>
+    const audio = document.getElementById('bg-music');
+    function toggleMusic() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+
+  <!-- hitwebcounter Code START --> 
+  <div style="margin-top: 30px;">
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=20936652&style=0001&nbdigits=5&type=page&initCount=0" 
+        title="Counter Widget" alt="Visit counter For Websites" border="0" />
+    </a>
+  </div>
+</body>
+</html>
